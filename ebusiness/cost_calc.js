@@ -11,22 +11,13 @@ function calcSub(){
       argSubTotal = 300;
     }
     
-    calcDisVatTotal(argSubTotal);
+    display(argSubTotal);
 }
 
-function calcDisVatTotal(parmSubTotal) {
-  
-  var subTotal = parmSubTotal;
-  var totalPrice = parmSubTotal;
-  
-  display(subTotal, totalPrice);
-  
-}
-
-function display(parm1, parm2){
+function display(parm1){
   
   document.getElementById("subtotal").value = parm1;
-  document.getElementById("total").value = parm2;
+  document.getElementById("total").value = parm1;
         
   enablebtnProceed();
 }
